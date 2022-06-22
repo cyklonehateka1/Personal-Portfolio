@@ -5,10 +5,14 @@ module.exports = {
     extend: {
       screens: {
         sm: "480px",
+        xsm: "250px",
+        averagePhone: "350px",
       },
-    },
-    fontFamily: {
-      nunito: ["Nunito", "sans-serif"],
+      spacing: {
+        big: "48rem",
+        semiBig: "40rem",
+        average: "34rem",
+      },
     },
   },
   plugins: [],

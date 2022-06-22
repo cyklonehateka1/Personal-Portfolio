@@ -1,67 +1,64 @@
-import DarkModeIcon from "@mui/icons-material/DarkMode";
-import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
-import MobileNavMenu from "./MobileNavMenu";
-import Close from "@mui/icons-material/Close";
-const Navbar = () => {
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
+import { FaBars, FaTimes } from "react-icons/fa";
+const NavBar = () => {
+  const [mobileNav, setMobileNav] = useState(false);
 
-  const mobileMeuOpener = () => {
-    setMenuIsOpen(true);
-  };
-
-  const mobileMenuClose = () => {
-    setMenuIsOpen(false);
-  };
+  const links = [
+    {
+      id: 1,
+      link: "Home",
+    },
+    {
+      id: 2,
+      link: "about",
+    },
+    {
+      id: 3,
+      link: "stack",
+    },
+    {
+      id: 4,
+      link: "works",
+    },
+    {
+      id: 5,
+      link: "contact",
+    },
+  ];
 
   return (
-    <div className="w-full fixed top-0 bg-white">
-      <div className="container mx-auto py-5 flex items-center justify-between ">
-        <div>
-          <h1 className="text-3xl font-bold text-blue-900">C.HATEKA</h1>
-        </div>
-        <ul className="hidden md:flex md:space-x-5 space-x-10 text-gray-700 font-bold text-small uppercase">
-          <li className="hover:text-gray-500 duration-500">
-            <span>home</span>
-          </li>
-          <li className="hover:text-gray-500 duration-500">
-            <span>services</span>
-          </li>
-          <li className="hover:text-gray-500 duration-500">
-            <span>about</span>
-          </li>
-          <li className="hover:text-gray-500 duration-500">
-            <span>works</span>
-          </li>
-          <li className="hover:text-gray-500 duration-500">
-            <span>contact</span>
-          </li>
-        </ul>
-        <div className="hidden md:block">
-          <DarkModeIcon style={{ color: "yellow", cursor: "pointer" }} />
-        </div>
-        <div className="md:hidden" onClick={mobileMeuOpener}>
-          <MenuIcon />
-        </div>
-        {menuIsOpen && <MobileNavMenu />}
-        {menuIsOpen && (
-          <div className="z-20" onClick={mobileMenuClose}>
-            <Close
-              style={{
-                width: "2.5rem",
-                height: "2.5rem",
-                color: "white",
-                zIndex: "999",
-                position: "relative",
-                top: "5px",
-                right: "auto",
-              }}
-            />
-          </div>
-        )}
+    <div className="flex justify-between items-center w-full h-20 text-black bg-white px-4 fixed">
+      <div>
+        <h1 className="text-3xl font-bold text-blue-900 ml-2">C.HATEKA</h1>
       </div>
+      <ul className="hidden md:flex">
+        {links.map(({ id, link }) => (
+          <li
+            key={id}
+            className="px-4 cursor-pointer capitalize font-medium text-gray-800 hover:scale-105 duration-300 sm:text-xl"
+          >
+            {link}
+          </li>
+        ))}
+      </ul>
+      <div
+        className="pr-4 z-10 md:hidden"
+        onClick={() => setMobileNav(!mobileNav)}
+      >
+        {mobileNav && <FaTimes size={30} className="text-white" />}
+        {!mobileNav && <FaBars size={30} />}
+      </div>
+      {mobileNav && (
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-t from-blue-700 to-blue-200 duration-1000">
+          {links.map(({ id, link }) => (
+            <li key={id} className="px-4 capitalize py-6 text-3xl text-white">
+              {link}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
 
-export default Navbar;
+export default NavBar;

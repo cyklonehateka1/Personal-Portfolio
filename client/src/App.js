@@ -1,8 +1,9 @@
-import Header from "./components/Header";
+import NavBar from "./components/NavBar";
+
 function App() {
   return (
-    <div className="h-screen font-nunito">
-      <Header />
+    <div>
+      <NavBar />
     </div>
   );
 }
