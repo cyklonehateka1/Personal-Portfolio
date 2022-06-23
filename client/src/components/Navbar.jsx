@@ -42,14 +42,14 @@ const NavBar = () => {
         ))}
       </ul>
       <div
-        className="pr-4 z-10 md:hidden"
+        className="pr-4 z-20 md:hidden"
         onClick={() => setMobileNav(!mobileNav)}
       >
         {mobileNav && <FaTimes size={30} className="text-white" />}
         {!mobileNav && <FaBars size={30} />}
       </div>
       {mobileNav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-t from-blue-700 to-blue-200 duration-1000">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-t from-blue-700 to-blue-200 duration-1000 z-10">
           {links.map(({ id, link }) => (
             <li key={id} className="px-4 capitalize py-6 text-3xl text-white">
               {link}
