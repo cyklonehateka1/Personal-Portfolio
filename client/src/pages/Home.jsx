@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div name="home" className="h-screen w-full bg-gradient-to-t from-blue-200">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 xl:flex-row">
-        <div className="pb-10 lg:relative lg:right-60 lg:bottom-20 xl:right-36 hidden xl:grid">
+        <div className="pb-10 lg:relative lg:right-60 lg:bottom-20 xl:right-36 hidden ">
           <h2 className="text-3xl font-bold xl:text-8xl xl:my--96 relative xl:top-auto xl:bottom-auto top-20 right-24">
             My Stack
           </h2>
@@ -178,9 +178,9 @@ const Home = () => {
         </div>
         <div>
           <img
-            src="https://i.ibb.co/8D7VFg5/hero2.png"
-            alt="Hero image"
-            className="mx-auto w-2/3 xl:w-full"
+            src="https://i.ibb.co/r42tfpc/realhero.png"
+            alt="Hero "
+            className="mx-auto w-1/2 lg:w-average xl:w-average"
           />
         </div>
         <div className="bg-white h-60 lg:h-80 lg:w-semiBig lg:absolute lg:right-10 lg:bottom-80 rounded-lg py-3 pt-10 items-center flex flex-col">
