@@ -178,7 +178,7 @@ const Home = () => {
         </div>
         <div>
           <img
-            src="https://i.ibb.co/r42tfpc/realhero.png"
+            src="https://i.ibb.co/8D7VFg5/hero2.png"
             alt="Hero "
             className="mx-auto w-1/2 lg:w-average xl:w-average"
           />
