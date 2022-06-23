@@ -9,9 +9,10 @@ module.exports = {
         averagePhone: "350px",
       },
       spacing: {
-        big: "48rem",
+        big: "58rem",
         semiBig: "40rem",
         average: "34rem",
+        box: "200px",
       },
     },
   },
