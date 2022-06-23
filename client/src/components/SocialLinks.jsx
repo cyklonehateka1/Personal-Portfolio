@@ -42,7 +42,7 @@ const SocialLinks = () => {
       ),
       href: "/",
       download: true,
-      style: "bg-green-500",
+      style: "bg-green-500 rounded-br-md",
     },
   ];
 
