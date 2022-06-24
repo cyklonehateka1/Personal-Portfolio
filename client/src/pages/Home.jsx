@@ -15,14 +15,14 @@ const Home = () => {
           <img
             src="https://i.ibb.co/8D7VFg5/hero2.png"
             alt="Hero "
-            className="w-2/3  relative left-20 "
+            className="w-2/3  relative left-20 lg:w-semiBig lg:left-96 xl:w-big"
           />
         </div>
-        <div className="w-3/4 h-80 bg-white relative top-10 items-center flex flex-col pt-2 px-8 rounded-md">
-          <h2 className="text-2xl sm:text-6xl font-bold my-5">
+        <div className="w-3/4 h-80 bg-white relative top-10 items-center flex flex-col pt-2 px-8 rounded-md lg:h-60 lg:pt-0 lg:top-60">
+          <h2 className="text-2xl sm:text-6xl font-bold my-5 lg:text-3xl lg:">
             Hi, I'm Hateka,
           </h2>
-          <p className="text-gray-700 text-2xl mb-4">
+          <p className="text-gray-700 text-2xl mb-4 lg:text-xl">
             a full stack developer who is problem solving driven and ready to
             help widen the scope of your brand through extensive web
             development.
