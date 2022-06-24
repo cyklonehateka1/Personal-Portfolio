@@ -5,7 +5,7 @@ const About = () => {
         <img
           src="https://i.ibb.co/8D7VFg5/hero2.png"
           alt="about"
-          className="w-60 lg:w-[25rem] rounded-[50rem] bg-black"
+          className="w-60 lg:w-[25rem] rounded-[50rem] "
         />
       </div>
       <div className="flex flex-col lg:h-1/2 lg:w-1/2  items-center bg-white relative lg:left-20 px-20">
