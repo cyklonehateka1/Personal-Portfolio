@@ -2,7 +2,10 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import TypeIt from "typeit-react";
 const Home = () => {
   return (
-    <div name="home" className="h-screen w-full bg-gradient-to-t from-blue-200">
+    <div
+      name="home"
+      className="lg:h-[80vh] h-screen w-full bg-gradient-to-t from-blue-200"
+    >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 xl:flex-row">
         <div className="pb-10 lg:relative lg:right-60 lg:bottom-20 xl:right-36 hidden ">
           <h2 className="text-3xl font-bold xl:text-8xl xl:my--96 relative xl:top-auto xl:bottom-auto top-20 right-24">
@@ -180,12 +183,12 @@ const Home = () => {
           <img
             src="https://i.ibb.co/8D7VFg5/hero2.png"
             alt="Hero "
-            className="mx-auto w-1/2 lg:w-average xl:w-average"
+            className="mx-auto w-1/2 lg:w-average xl:w-average lg:top-16 relative z-0"
           />
         </div>
-        <div className="bg-white h-60 lg:h-80 lg:w-semiBig lg:absolute lg:right-10 lg:bottom-80 rounded-lg py-3 pt-10 items-center flex flex-col">
-          <h2 className="text-3xl sm:text-6xl font-bold">Hi, I'm Hateka</h2>
-          <p className="text-gray-700 py-4 max-w-md md:text-2xl">
+        <div className="bg-white h-40 w-60 lg:h-80 lg:w-semiBig lg:absolute lg:right-10 lg:bottom-80 rounded-lg py-3 pt-10 items-center flex flex-col justify-center">
+          <h2 className="text-2xl sm:text-6xl font-bold">Hi, I'm Hateka</h2>
+          <p className="text-gray-700 py-4 max-w-md md:text-2xl text-[10px]">
             I'm a full stack developer who helps widen the scope of your brand
             through extensive web development.
           </p>
