@@ -14,7 +14,7 @@ const About = () => {
           I'm Emmanuel Hateka a Full stack developer who is driven by solving
           problems through software engineering. I'm currently a student of
           Takoradi Technical University reading Bachelor of Technology in
-          Imformation Technology. I'm that person who is committed to learning
+          Imformation Technology. I'm that person who is committed to learnin
           and finding new ways to tackle a particular problem and in so doing
           choosing the best solution out of the numerous options. I take
           interest in helping both my team members and I to develop so that
