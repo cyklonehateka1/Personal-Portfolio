@@ -8,8 +8,8 @@ const About = () => {
           className="w-40 sm:w-60 md:w-80 rounded-[50rem] xl:w-96 "
         />
       </div>
-      <div className="flex flex-col items-center mx-10 justify-center  rounded-md pb-6 w-[300px] sm:w-[450px] md:w-[600px] md:bg-white lg:w-[900px] xl:items-start xl:pl-5 xl:relative xl:left-32 xl:h-[500px]">
-        <h2 className="text-3xl  font-bold mt-3 mb-2 sm:text-4xl lg:text-5xl lg:mb-5 text-blue-900 xl:text-6xl t xl:">
+      <div className="flex flex-col items-center mx-10 justify-center  rounded-md pb-6 w-[300px] sm:w-[450px] md:w-[600px] md:bg-white lg:w-[900px] xl:items-start xl:pl-5 xl:relative xl:left-24 xl:h-[500px]">
+        <h2 className="text-3xl  font-bold mt-3 mb-2 sm:text-4xl lg:text-5xl lg:mb-5 text-blue-900 xl:text-6xl ">
           About Me
         </h2>
         <p className="  w-[280px]    text-justify relative text-sm sm:w-[420px] sm:text-lg md:w-[550px] md:text-xl lg:w-[850px] lg:text-2xl xl:text-[26px]">

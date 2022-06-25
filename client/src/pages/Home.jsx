@@ -18,7 +18,7 @@ const Home = () => {
             className="w-2/3 left-16 top-6 relative sm:w-1/2 sm:left-28 md:left-20 lg:w-semiBig lg:left-96 xl:w-big xl:rounded-[5rem]"
           />
         </div>
-        <div className="top-7 md:h-80 h-56 md:w-3/4  bg-white relative md:top-10 items-center flex flex-col pt-2 px-8 rounded-md lg:h-60 lg:pt-0 lg:top-60 xl:left-[26rem] xl:h-80 xl:top-20 xl:w-big xl:rounded-lg">
+        <div className="top-7 md:h-80 h-56 md:w-3/4  bg-white relative md:top-10 items-center flex flex-col pt-2 px-8 rounded-md lg:h-60 lg:pt-0 lg:top-60 xl:left-[20rem] xl:h-80 xl:top-20 xl:w-big xl:rounded-lg">
           <h2 className="text-2xl sm:text-4xl font-bold my-1  md:my-5 lg:text-3xl xl:text-5xl xl:mt-7 text-blue-900">
             Hi, I'm Hateka,
           </h2>
