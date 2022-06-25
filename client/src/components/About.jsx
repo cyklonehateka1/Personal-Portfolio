@@ -1,24 +1,28 @@
 const About = () => {
   return (
-    <div className="py-5 lg:px-80 lg:py-20  flex flex-col lg:flex-row gap-20  lg:mb-20 bg-blue-50 items-center justify-center">
-      <div className="rounded-[50rem]   lg:my-auto  items-center flex bg-blue-200 relative lf:left-20">
+    <div className="pt-10 flex flex-col  gap-10  lg:mb-20 bg-blue-50 items-center justify-center  xl:flex-row xl:py-40">
+      <div className="rounded-[50rem]   lg:my-auto  items-center flex bg-blue-200 relative lf:left-20 ">
         <img
           src="https://i.ibb.co/8D7VFg5/hero2.png"
           alt="about"
-          className="w-60 lg:w-[25rem] rounded-[50rem] "
+          className="w-40 sm:w-60 md:w-80 rounded-[50rem] xl:w-96 "
         />
       </div>
-      <div className="flex flex-col lg:h-1/2 lg:w-1/2  items-center bg-white relative lg:left-20 px-20">
-        <h2 className="text-2xl lg:text-6xl font-bold my-5">About Me</h2>
-        <p className=" lg:ml-10 min-w-[20rem] lg:min-w-fit lg:max-w-fit max-w-[25rem] lg:text-2xl text-justify relative ">
+      <div className="flex flex-col items-center mx-10 justify-center  rounded-md pb-6 w-[300px] sm:w-[450px] md:w-[600px] md:bg-white lg:w-[900px] xl:items-start xl:pl-5 xl:relative xl:left-32 xl:h-[500px]">
+        <h2 className="text-3xl  font-bold mt-3 mb-2 sm:text-4xl lg:text-5xl lg:mb-5 text-blue-900 xl:text-6xl t xl:">
+          About Me
+        </h2>
+        <p className="  w-[280px]    text-justify relative text-sm sm:w-[420px] sm:text-lg md:w-[550px] md:text-xl lg:w-[850px] lg:text-2xl xl:text-[26px]">
           I'm Emmanuel Hateka a Full stack developer who is driven by solving
           problems through software engineering. I'm currently a student of
           Takoradi Technical University reading Bachelor of Technology in
-          Imformation Technology. I'm that person who is committed to learnin
+          Imformation Technology. I'm that person who is committed to learning
           and finding new ways to tackle a particular problem and in so doing
           choosing the best solution out of the numerous options. I take
           interest in helping both my team members and I to develop so that
-          together the team can reach its collective goal
+          together the team can reach its collective goal. A more detailed
+          insight of my eductional and software engineering background and
+          experience is in my resume. Click on on the button below to download
         </p>
       </div>
     </div>
