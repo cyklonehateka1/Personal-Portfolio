@@ -18,11 +18,11 @@ const SocialLinks = () => {
       id: 2,
       child: (
         <>
-          LinkedIn <FaGithub size={30} />
+          Github <FaGithub size={30} />
         </>
       ),
       href: "https://github.com/cyklonehateka1",
-      style: "bg-black",
+      style: "bg-[#24292F]",
     },
     {
       id: 3,
@@ -32,6 +32,7 @@ const SocialLinks = () => {
         </>
       ),
       href: "mailto:cyklonehateka@gmail.com",
+      style: " bg-red-500",
     },
     {
       id: 4,
@@ -42,12 +43,12 @@ const SocialLinks = () => {
       ),
       href: "/",
       download: true,
-      style: "bg-green-500 rounded-br-md",
+      style: "bg-green-700 rounded-br-md",
     },
   ];
 
   return (
-    <div className="flex-col top-[35%] left-0 fixed lg:flex hidden">
+    <div className="flex-col top-[35%] left-0 fixed md:flex hidden">
       <ul>
         {links.map(({ style, id, href, child, download }) => (
           <li
